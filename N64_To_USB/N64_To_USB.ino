@@ -483,8 +483,14 @@ void loop()
     N64_get2();
     interrupts();
     translate_raw_data();
-    Serial.write((uint8_t *)&N64_status,4);
-    Serial.write((uint8_t *)&N64_status2,4);
+    //Serial.write((uint8_t *)&N64_status,4);
+    //Serial.write((uint8_t *)&N64_status2,4);
+
+    Serial.write((uint8_t *)&N64_status,2);
+    Serial.write((uint8_t *)&N64_status2,2);
+    Serial.write((uint8_t *)&N64_status+2,2);
+    Serial.write((uint8_t *)&N64_status2+2,2);
+
     delay(10);
 }
 
