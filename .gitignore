@@ -1,0 +1,22 @@
+#
+# .gitignore
+#
+
+## General ##
+*~
+*.bak
+
+
+## Object Files ##
+*.o
+*.ko
+*.so
+*.dll
+*.exe
+*.bin
+*.elf
+
+
+## IDE-related ##
+.vscode/
+.dep/

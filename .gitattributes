@@ -1,0 +1,7 @@
+#
+# .gitattributes
+#
+
+## Generic "Catch-All" ##
+*										text=auto
+
